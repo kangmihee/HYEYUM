@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_my_past_answer_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="19dp"
+        android:background="#30000000">
+
+        <TextView
+            android:id="@+id/txt_my_past_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="5dip"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textColorHint="#c3c3c3"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_myanswer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relative_my_past_answer_view"
+        android:background="#30000000">
+
+        <TextView
+            android:id="@+id/txt_loc_my_past_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txt_date_my_past_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/relative_my_past_answer_savetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/txt_date_my_past_answer_view"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="10dp" />
+
+        <ImageButton
+            android:id="@+id/img_heart_my_past_answer_view"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/heart_full"
+            android:paddingRight="20dp" />
+
+        <TextView
+            android:id="@+id/txt_heart_my_past_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/img_heart_my_past_answer_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</RelativeLayout>

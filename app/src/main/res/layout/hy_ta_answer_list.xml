@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:background="#30000000">
+
+        <TextView
+            android:id="@+id/txt_talist_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="5dip"
+            android:paddingBottom="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_talist"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="#30000000">
+
+        <TextView
+            android:id="@+id/relative_savetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="15dp" />
+
+
+        <ImageView
+            android:id="@+id/img_talist_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingRight="50dp" />
+
+        <ImageView
+            android:id="@+id/img_talist_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/heart_full" />
+
+        <TextView
+            android:id="@+id/txt_talist_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000"
+    android:orientation="vertical">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+    <LinearLayout
+        android:id="@+id/cal_linear"
+        android:layout_width="315dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/calendarView"
+        android:layout_centerHorizontal="true"
+        android:background="#ffD5D5D5"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/cal_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cal_linear"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="10dip"
+        android:text=""
+        android:textColor="#dddddd"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/cal_answercount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cal_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="10dip"
+        android:text="오늘의 혜윰 글"
+        android:textColor="#dddddd"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/cal_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cal_answercount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="10dip"
+        android:text="내가 공감한 혜윰"
+        android:textColor="#dddddd"
+        android:textSize="14dp" />
+</RelativeLayout>

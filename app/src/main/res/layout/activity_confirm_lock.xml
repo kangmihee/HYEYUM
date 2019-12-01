@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/confirm_lock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_input_con"
+        android:layout_centerHorizontal="true"
+        android:text="비밀번호를 확인해주세요"
+        android:textColor="#dddddd"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_input_con"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="확인"
+        android:textColor="#dddddd"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/password_input_con"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:hint="* * * *"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:text=""
+        android:textColor="#dddddd"
+        android:textCursorDrawable="@null"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignEnd="@+id/btn_pass"
+        android:layout_alignRight="@+id/btn_pass"
+        android:layout_marginBottom="36dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

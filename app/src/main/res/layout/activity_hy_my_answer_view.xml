@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/txt_questiontitle_my_answer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4dip"
+        android:text=""
+        android:textColor="#dddddd"
+        android:textSize="17dp" />
+
+    <ImageButton
+        android:id="@+id/btn_back_my_answer_view"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_white"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_white"
+        android:textSize="10dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relative_my_answer_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txt_questiontitle_my_answer_view"
+        android:layout_marginTop="25dp"
+        android:background="#30000000"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/txt_my_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="5dip"
+            android:scrollbars="none"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textColorHint="#c3c3c3"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_myanswer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relative_my_answer_view"
+        android:background="#30000000">
+
+        <TextView
+            android:id="@+id/txt_loc_my_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txt_date_my_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/relative_my_answer_savetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/txt_date_my_answer_view"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/img_heart_my_answer_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/heart_full" />
+
+        <TextView
+            android:id="@+id/txt_heart_my_answer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/img_heart_my_answer_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/down_gif"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relative_myanswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
